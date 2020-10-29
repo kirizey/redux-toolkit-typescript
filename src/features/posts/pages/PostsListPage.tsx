@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
 
+/**
+ *
+ */
 export default function PostsListPage() {
   return (
     <div>
-      hello posts!
+      hello posts!!!
     </div>
-  )
+  );
 }
