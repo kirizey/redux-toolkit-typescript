@@ -24,7 +24,8 @@
     "no-param-reassign": "off",
     "max-classes-per-file": "off",
     "max-len": ["error", { "code": 120 }],
-    "no-extra-semi": "off",
-    "@typescript-eslint/no-extra-semi": ["error"]
+    "no-extra-semi": 0,
+    "@typescript-eslint/no-extra-semi": 0,
+    "semi": 0
   }
 }

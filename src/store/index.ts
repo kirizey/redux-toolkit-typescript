@@ -1,11 +1,19 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 
-import posts from './posts/postsSlice';
+import postsSlice from './posts/postsSlice';
+import authSlice from './auth/authSlice';
+
+const rootReducer = combineReducers({
+  postsSlice,
+  authSlice,
+})
 
 const store = configureStore({
-  reducer: {
-    posts,
-  },
+  reducer: rootReducer,
+  middleware: getDefaultMiddleware({
+    serializableCheck: false,
+  }),
 });
 
 export default store;
+export type RootState = ReturnType<typeof rootReducer>

@@ -6,4 +6,4 @@ export default interface AddressDto {
   city: string;
   zipcode: string;
   geo: GeoDto;
-}
+};
